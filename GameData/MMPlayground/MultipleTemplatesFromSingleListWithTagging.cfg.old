@@ -1,0 +1,80 @@
+// NOT WORKING YET
+
+// Use a single settings list to generate multiple templated nodes
+// "tags" in settings list control which items appear in which KATEMPLATE
+
+MY_SETTINGS
+{
+  TEMPLIST
+  {
+    Experiment
+    {
+      name = crewReport
+      value = 1
+    }
+    Experiment
+    {
+      name = healthExperiments
+      value = 3
+    }
+    Experiment
+    {
+      name = temperatureScan
+      value = 2
+    }
+    Experiment
+    {
+      name = barometerScan
+      value = 5
+    }
+  }
+
+  TAG_isCrewExp
+  {
+    name = crewReport
+    name = healthExperiments
+  }
+
+  TAG_isUnmannedExp
+  {
+    name = temperatureScan
+    name = barometerScan
+  }
+
+  // container for output
+  OUTPUT_KATEMPLATES
+  {
+    CREW {}
+    UNMANNED {}
+  }
+}
+
+// Do processing
+
+// Preprocess - clone LIST
+@MY_SETTINGS:BEFORE[ZZZZZZZZZ_Templating]
+{
+  TEMPCOPY
+  {
+    #/TEMPLIST {}
+  }
+}
+// process crew healthExperiments
+@MY_SETTINGS:HAS[@TAG_isCrewExp[*]]:BEFORE[ZZZZZZZZZ_Templating]
+{
+  @OUTPUT_KATEMPLATES
+  {
+    @CREW
+    {
+      //#/TEMPLIST/Experiment[$/TAG_isCrewExp/name,0$] {}
+      //experiment = #$/TAG_isCrewExp/name$
+      // #/TEMPLIST[/TAG_isCrewExp,0/name] {}
+    }
+  }
+
+  @TAG_isCrewExp
+  {
+    !name,0 = delete
+  }
+  MM_PATCH_LOOP {}
+}

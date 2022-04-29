@@ -1,0 +1,43 @@
+// Use a list of nodes to generate a list of KATEMPLATE nodes
+
+// Do processing
+@MY_KATEMPLATES:HAS[@TEMPNODELIST:HAS[@Experiment[*]]]:FOR[ZZZZZZZZZ_Templating]
+{
+  // create a new node inside KATEMPLATEs based on first item in TEMPNODELIST
+	EXPERIMENT_KATEMPLATE
+	{
+		name = Experiment
+		experiment_id = #$../TEMPNODELIST/Experiment/name$ // copy first experiment id
+	}
+
+	@TEMPNODELIST
+	{ // delete first id from list
+		!Experiment,0 {}
+	}
+
+	MM_PATCH_LOOP {} // check to see if more items to process
+}
+
+@MY_KATEMPLATES:LAST[ZZZZZZZZZ_Templating]
+{
+  !TEMPNODELIST {} // remove temp list after processing completes
+}
+
+// ModuleManager.ConfigCache Output
+// UrlConfig
+// {
+// 	parentUrl = MMPlayground/KATEMPLATEsFromNodeList.cfg
+// 	MY_KATEMPLATES_2
+// 	{
+// 		EXPERIMENT_KATEMPLATE
+// 		{
+// 			name = Experiment
+// 			experiment_id = crewReport
+// 		}
+// 		EXPERIMENT_KATEMPLATE
+// 		{
+// 			name = Experiment
+// 			experiment_id = temperatureScan
+// 		}
+// 	}
+// }

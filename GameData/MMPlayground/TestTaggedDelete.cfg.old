@@ -1,0 +1,40 @@
+TEMP_STORE
+{
+  LIST
+  {
+    NODE
+    {
+      name = one
+      TAG = true
+    }
+    NODE
+    {
+      name = two
+      TAG = false
+    }
+    NODE
+    {
+      name = three
+      TAG = true
+    }
+    NODE
+    {
+      name = four
+      // no tag
+    }
+    NODE
+    {
+      name = five
+      TAG = false
+    }
+  }
+}
+
+@TEMP_STORE
+{
+  @LIST
+  {
+    // !NODE,0 {} // coreectly deletes just NODE[one]
+    !NODE:HAS[#TAG[true]],0 {} // deletes both NODE[one] amd MODE[three]
+  }
+}
