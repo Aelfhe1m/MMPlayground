@@ -2,7 +2,7 @@ ship = ATS Saturn V
 version = 1.3.1
 description = 1. Toggle SLA Open¨2. Toggle SM antennae¨3. Jetison SM side panel shroud¨4. Toggle sub-satellite cap¨5. Decouple sub-satllite¨6. LM Antenna¨7. Decouple LM from SLA¨8. Decouple SM from CM, activate CM RCS¨9. Cut drogue chutes¨¨0. Abort deflection motor¨¨Abort: decouple SM from CM and start LES¨Gear: Toggle LEM legs
 type = VAB
-size = 12.6283321,75.6808014,12.6283302
+size = 12.6283321,75.6808167,12.6283302
 PART
 {
 	part = APOLLO.CM_4294195804
@@ -2602,6 +2602,8 @@ PART
 	modSize = 0,0,0
 	link = J2.Engine_4293920840
 	link = S.II.DECOUPLER_4293904626
+	link = S.IVB.Auxiliary.propulsion.system_4294025634
+	link = S.IVB.Auxiliary.propulsion.system_4294019208
 	attN = bott,J2.Engine_4293920840
 	attN = top,SLA_4294060530
 	attN = bottom,S.II.DECOUPLER_4293904626
@@ -2853,12 +2855,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 8
+	istg = 9
 	resPri = 0
 	dstg = 3
-	sidx = 1
-	sqor = 8
-	sepI = 8
+	sidx = 0
+	sqor = 9
+	sepI = 9
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -3040,12 +3042,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 8
+	istg = 9
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 8
+	sepI = 9
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -3056,6 +3058,10 @@ PART
 	link = J2.Engine_4293849760
 	link = J2.Engine_4293842602
 	link = S.IC.DECOUPLER_4293835300
+	link = S.IC.RETRO.MOTOR_4294074468
+	link = S.IC.RETRO.MOTOR_4294072168
+	link = S.IC.RETRO.MOTOR_4294072028
+	link = S.IC.RETRO.MOTOR_4294071888
 	attN = bottom,S.IC.DECOUPLER_4293835300
 	attN = top,S.II.DECOUPLER_4293904626
 	attN = 1,J2.Engine_4293850288
@@ -3109,12 +3115,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 10
+	istg = 11
 	resPri = 0
 	dstg = 4
 	sidx = 0
-	sqor = 10
-	sepI = 8
+	sqor = 11
+	sepI = 9
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -3269,12 +3275,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 10
+	istg = 11
 	resPri = 0
 	dstg = 4
 	sidx = 0
-	sqor = 10
-	sepI = 8
+	sqor = 11
+	sepI = 9
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -3429,12 +3435,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 10
+	istg = 11
 	resPri = 0
 	dstg = 4
 	sidx = 0
-	sqor = 10
-	sepI = 8
+	sqor = 11
+	sepI = 9
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -3589,12 +3595,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 10
+	istg = 11
 	resPri = 0
 	dstg = 4
 	sidx = 0
-	sqor = 10
-	sepI = 8
+	sqor = 11
+	sepI = 9
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -3749,12 +3755,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 10
+	istg = 11
 	resPri = 0
 	dstg = 4
 	sidx = 1
-	sqor = 10
-	sepI = 8
+	sqor = 11
+	sepI = 9
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -3906,12 +3912,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 10
+	istg = 11
 	resPri = 0
 	dstg = 5
 	sidx = 2
-	sqor = 10
-	sepI = 10
+	sqor = 11
+	sepI = 11
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -3964,12 +3970,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 10
+	istg = 11
 	resPri = 0
 	dstg = 7
 	sidx = 3
-	sqor = 10
-	sepI = 10
+	sqor = 11
+	sepI = 11
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -4183,12 +4189,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 11
+	istg = 12
 	resPri = 0
 	dstg = 8
 	sidx = 0
-	sqor = 11
-	sepI = 10
+	sqor = 12
+	sepI = 11
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -4373,12 +4379,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 11
+	istg = 12
 	resPri = 0
 	dstg = 8
 	sidx = 0
-	sqor = 11
-	sepI = 10
+	sqor = 12
+	sepI = 11
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -4563,12 +4569,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 11
+	istg = 12
 	resPri = 0
 	dstg = 8
 	sidx = 0
-	sqor = 11
-	sepI = 10
+	sqor = 12
+	sepI = 11
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -4753,12 +4759,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 11
+	istg = 12
 	resPri = 0
 	dstg = 8
 	sidx = 0
-	sqor = 11
-	sepI = 10
+	sqor = 12
+	sepI = 11
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -4943,12 +4949,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 11
+	istg = 12
 	resPri = 0
 	dstg = 8
 	sidx = 1
-	sqor = 11
-	sepI = 10
+	sqor = 12
+	sepI = 11
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -5130,12 +5136,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 11
+	istg = 12
 	resPri = 0
 	dstg = 8
 	sidx = 2
-	sqor = 11
-	sepI = 11
+	sqor = 12
+	sepI = 12
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -5469,12 +5475,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 9
+	istg = 10
 	resPri = 0
 	dstg = 3
 	sidx = 0
-	sqor = 9
-	sepI = 9
+	sqor = 10
+	sepI = 10
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -5527,12 +5533,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 9
+	istg = 10
 	resPri = 0
 	dstg = 5
 	sidx = 1
-	sqor = 9
-	sepI = 9
+	sqor = 10
+	sepI = 10
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -5614,7 +5620,7 @@ PART
 	dstg = 7
 	sidx = 1
 	sqor = 0
-	sepI = 9
+	sepI = 10
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -5689,6 +5695,620 @@ PART
 		name = SolidFuel
 		amount = 4
 		maxAmount = 4
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = S.IC.RETRO.MOTOR_4294074468
+	partName = Part
+	pos = 2.03832793,39.3106956,-2.50582719
+	attPos = 0,0,0
+	attPos0 = 2.03821611,-1.33024979,-2.50592804
+	rot = 0,0.382683516,0,-0.923879504
+	attRot = 0,0,0,1
+	attRot0 = 0,0.382683516,0,-0.923879504
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 4
+	sidx = 2
+	sqor = 4
+	sepI = 9
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = S.IC.RETRO.MOTOR_4294072168
+	sym = S.IC.RETRO.MOTOR_4294072028
+	sym = S.IC.RETRO.MOTOR_4294071888
+	srfN = srfAttach,S.II_4293887352
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 1
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 6.2000000000000002
+		maxAmount = 6.2000000000000002
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = S.IC.RETRO.MOTOR_4294072168
+	partName = Part
+	pos = -2.50581598,39.3106956,-2.03811526
+	attPos = 0,0,0
+	attPos0 = -2.5059278,-1.33024979,-2.03821611
+	rot = 0,-0.382683337,0,-0.923879564
+	attRot = 0,0,0,1
+	attRot0 = 0,-0.382683337,0,-0.923879564
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 4
+	sidx = 2
+	sqor = 4
+	sepI = 9
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = S.IC.RETRO.MOTOR_4294074468
+	sym = S.IC.RETRO.MOTOR_4294072028
+	sym = S.IC.RETRO.MOTOR_4294071888
+	srfN = srfAttach,S.II_4293887352
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 1
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 6.2000000000000002
+		maxAmount = 6.2000000000000002
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = S.IC.RETRO.MOTOR_4294072028
+	partName = Part
+	pos = -2.03810406,39.3106956,2.50602913
+	attPos = 0,0,0
+	attPos0 = -2.03821588,-1.33024979,2.50592828
+	rot = 0,-0.923879504,0,-0.382683486
+	attRot = 0,0,0,1
+	attRot0 = 0,-0.923879504,0,-0.382683486
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 4
+	sidx = 2
+	sqor = 4
+	sepI = 9
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = S.IC.RETRO.MOTOR_4294074468
+	sym = S.IC.RETRO.MOTOR_4294072168
+	sym = S.IC.RETRO.MOTOR_4294071888
+	srfN = srfAttach,S.II_4293887352
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 1
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 6.2000000000000002
+		maxAmount = 6.2000000000000002
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = S.IC.RETRO.MOTOR_4294071888
+	partName = Part
+	pos = 2.50603986,39.3106956,2.03831673
+	attPos = 0,0,0
+	attPos0 = 2.50592804,-1.33024979,2.03821588
+	rot = 0,-0.923879564,0,0.382683337
+	attRot = 0,0,0,1
+	attRot0 = 0,-0.923879564,0,0.382683337
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 4
+	sidx = 2
+	sqor = 4
+	sepI = 9
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = S.IC.RETRO.MOTOR_4294074468
+	sym = S.IC.RETRO.MOTOR_4294072168
+	sym = S.IC.RETRO.MOTOR_4294072028
+	srfN = srfAttach,S.II_4293887352
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 1
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 6.2000000000000002
+		maxAmount = 6.2000000000000002
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = S.IVB.Auxiliary.propulsion.system_4294025634
+	partName = Part
+	pos = 0.000111877918,52.2961121,2.14444757
+	attPos = 0,0,0
+	attPos0 = 0,-3.15504074,2.14434671
+	rot = 0,1,0,0
+	attRot = 0,0,0,1
+	attRot0 = 0,1,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 9
+	resPri = 0
+	dstg = 2
+	sidx = 1
+	sqor = 9
+	sepI = 7
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = S.IVB.Auxiliary.propulsion.system_4294019208
+	srfN = srfAttach,S.IVB_4294045450
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 140
+		maxAmount = 140
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = S.IVB.Auxiliary.propulsion.system_4294019208
+	partName = Part
+	pos = 0.000111690453,52.2961121,-2.14424586
+	attPos = 0,0,0
+	attPos0 = -1.87465048E-07,-3.15504074,-2.14434671
+	rot = 0,-4.37113883E-08,0,-1
+	attRot = 0,0,0,1
+	attRot0 = 0,-4.37113883E-08,0,-1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 9
+	resPri = 0
+	dstg = 2
+	sidx = 1
+	sqor = 9
+	sepI = 7
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = S.IVB.Auxiliary.propulsion.system_4294025634
+	srfN = srfAttach,S.IVB_4294045450
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 140
+		maxAmount = 140
 		flowState = True
 		isTweakable = True
 		hideFlow = False
